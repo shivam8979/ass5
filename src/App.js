@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './component/Card';
+import Img from './Images/img1.jpg';
+import Img2 from './Images/img3.jpg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Card movie="IRONMAN" yearAndAuthor="2008,jone" images={Img} />
+    <Card
+      movie="HARRY POTTER"
+      yearAndAuthor="2000,jone"
+      images={Img2}
+    />
+    
+  </div>
   );
 }
 
